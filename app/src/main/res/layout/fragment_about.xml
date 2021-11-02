@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E91E63"
+    tools:context=".ui.about.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E91E63"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="393dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:background="#C61652"
+            android:gravity="center|center_horizontal"
+            android:text="About Us"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="462dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#C61652"
+                    android:foregroundGravity="center"
+                    android:padding="10dp"
+                    android:paddingTop="15dp"
+                    android:text="        A gift shop or souvenir shop is a store primaril selling souvenirs memorabilia, and other items relating to a particular topic or theme. The items sold often include coffee mugs, stuffed animals, toys, t-shirts, postcards, handmade collections and other souvenirs,
+ intended to be kept by the buyer as a memento of their visit, or given to another as a gift. Gift shops are normally found in areas visited by many tourists. Hotels and motels in Canada and the United States often feature a gift shop near their entrance. Venues such as zoos, aquariums,  national  parks,
+ theme parks, and museums have their own gift shops as well; in some cases these shops sell items of higher value than gift shops not associated with a venue, as well as trinkets.  These stores are sometimes a source of financial support for educational institutions."
+
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/i1"
+                        android:layout_width="198dp"
+                        android:layout_height="139dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/cake1" />
+
+                    <ImageView
+                        android:id="@+id/i2"
+                        android:layout_width="229dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/cake2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

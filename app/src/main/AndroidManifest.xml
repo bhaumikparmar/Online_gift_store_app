@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.online_gift_store">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity android:name="com.example.online_gift_store.MainActivity_splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.online_gift_store.MainActivity_login"/>
+        <activity android:name=".MainActivity_registration"/>
+        <activity android:name=".MainActivity_forgot_pass1"/>
+        <activity android:name=".MainActivity_forgot_pass2"/>
+        <activity android:name=".MainActivity_forgot_pass3"/>
+        <activity android:name=".MainActivity_birthday_gift"/>
+        <activity android:name=".MainActivity_anniversary_gift"/>
+        <activity android:name=".MainActivity_occasions_gift"/>
+        <activity android:name=".MainActivity_cakes"/>
+        <activity android:name=".MainActivity_flowers"/>
+        <activity android:name=".MainActivity_combo_gift"/>
+        <activity android:name=".MainActivity1"/>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Online_gift_store.NoActionBar">
+        </activity>
+
+
+    </application>
+
+</manifest>
