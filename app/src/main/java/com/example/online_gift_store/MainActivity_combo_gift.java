@@ -15,7 +15,7 @@ public class MainActivity_combo_gift extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_occasions_gift);
+        setContentView(R.layout.activity_combo);
 
         i1 = findViewById(R.id.imageView1);
         i1.setOnClickListener(new View.OnClickListener() {
@@ -23,12 +23,12 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift1);
-                intent.putExtra("value","Almonds N Pistachios \n"+
-                        "500rs.");
+                intent.putExtra("resId",R.drawable.c1);
+                intent.putExtra("value","Combo Gift For Mother \n"+
+                        "600rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> Almonds (100 gms) \n"+
-                        "-> Pistachios (100 gms)");
+                        "-> 1 Multicolo Neckpiece\n" +
+                        "-> 1 Printed Ceramic Mug");
                 startActivity(intent);
             }
         });
@@ -40,13 +40,12 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift2);
-                intent.putExtra("value","Sweets in Silver Thali\n"+
-                        "1900rs.");
+                intent.putExtra("resId",R.drawable.c2);
+                intent.putExtra("value","Best Dad Gift Combo\n"+
+                        "500rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 500 Gms Kaju Roll\n" +
-                        "-> 500 Gms Besan Ladoo\n" +
-                        "-> 1 Silver Thali");
+                        "-> One Personalised Heart Shape Table Top for DAD\n" +
+                        "-> One 6 inches Greeting Card For DAD");
                 startActivity(intent);
             }
         });
@@ -59,12 +58,11 @@ public class MainActivity_combo_gift extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.o_gift3);
-                intent.putExtra("value","Pamper With Dry Fruits\n"+
-                        "2500rs.");
+                intent.putExtra("value","Amazing Love Combo\n"+
+                        "700rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> A Round Glass Vase\n"+
-                        "-> Diameter 6 Inches approx.containing Almonds (250 gms),\n"+
-                        "-> Raisin (250 gms), Cashews Nuts (250 gms), Pista (250 gms)");
+                        "->One Printed Quote Red Handle Ceramic Coffee Mug (350 ml)\n" +
+                        "-> 1 Photo Frame (6.75 x 4.75 inches)");
                 startActivity(intent);
             }
         });
@@ -76,12 +74,14 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift4);
-                intent.putExtra("value","Soan Papdi N Cadbury Celebrations Pack\n"+
-                        "550rs.");
+                intent.putExtra("resId",R.drawable.c4);
+                intent.putExtra("value","Carnations Love Combo\n"+
+                        "1800rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> Soan Papdi (250 gms)\n" +
-                        "-> 1 Cadbury Celebrations Pack (114 gms)");
+                        "-> 20 Red Carnations\n" +
+                        "-> Paper Packing\n" +
+                        "-> Half Kg Chocolate Cake\n" +
+                        "-> Teddy ( 12 inches)");
                 startActivity(intent);
             }
         });
@@ -93,11 +93,12 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift5);
-                intent.putExtra("value","Haldirams Kaju Katli\n"+
-                        "600rs.");
+                intent.putExtra("resId",R.drawable.c5);
+                intent.putExtra("value","Bright Chocolate Combo\n"+
+                        "1100rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 500 Gms Kaju Katli");
+                        "-> 15 Yellow Roses\n" +
+                        "-> 1/2 Kg Chocolate Cake");
                 startActivity(intent);
             }
         });
@@ -109,11 +110,13 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift6);
-                intent.putExtra("value","Lavishing Holi Wishes\n"+
-                        "800rs.");
+                intent.putExtra("resId",R.drawable.c6);
+                intent.putExtra("value","Ferrero Rocher Chocolate with Red Roses\n"+
+                        "600rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 500 gm Haldiram Gujiya");
+                        "-> 6 Red Roses\n" +
+                        "-> 4 Ferrero Rocher Chocolates\n" +
+                        "-> Red Paper Packing");
                 startActivity(intent);
             }
         });
@@ -125,12 +128,12 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift7);
-                intent.putExtra("value","Rasgulla N Kitkat Chocolates\n"+
-                        "700rs.");
+                intent.putExtra("resId",R.drawable.c7);
+                intent.putExtra("value","Lovely Blooms Combo\n"+
+                        "2500rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 2 Nestle's Kitkat Chocolates (13.2 gms each)\n" +
-                        "-> Rasgulla (1 Kg)");
+                        "-> Heart Shaped Arrangement of 40 Red Roses\n" +
+                        "-> 1 kg Heart Shape Black Forest Cake");
                 startActivity(intent);
             }
         });
@@ -142,12 +145,11 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift8);
-                intent.putExtra("value","Gulab Jamun Diyas\n"+
-                        "900rs.");
+                intent.putExtra("resId",R.drawable.c8);
+                intent.putExtra("value","3D Mug Combo\n"+
+                        "999rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 1 kg Haldiram's Gulab Jamun\n" +
-                        "-> 5 Wax Filled Diyas(each of 2 inches diameter");
+                        "-> One Love Couple 3D Ceramic Mug with 5 Kitkat Chocolate (13gm)");
                 startActivity(intent);
             }
         });
@@ -159,12 +161,12 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift9);
-                intent.putExtra("value","Potli Full of Healthy Dry Fruits\n"+
-                        "600rs.");
+                intent.putExtra("resId",R.drawable.c9);
+                intent.putExtra("value","Fascinating Silk N Bracelet Combo\n"+
+                        "400rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                       "-> A Potli Bag with a pearl handle\n"+
-                       "-> Almonds (100 gms) and Cashew Nuts (100 gms)");
+                       "-> Diamond Embedded Gold Bracelet\n" +
+                       "-> Dairy Milk Silk Chocolate");
                 startActivity(intent);
             }
         });
@@ -176,11 +178,12 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift10);
-                intent.putExtra("value","Kesariya Ladoos\n"+
-                                "1200rs.");
+                intent.putExtra("resId",R.drawable.c10);
+                intent.putExtra("value","Duo Silk N Ethenic Earrings Combo\n"+
+                                "500rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 1 kg Kesariya Motichoor Ladoo");
+                        "-> Gold Multicolor Traditional Earrings\n" +
+                        "-> 2 Dairy Milk Silk Chocolate");
                 startActivity(intent);
             }
         });
@@ -191,11 +194,15 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift11);
-                intent.putExtra("value","Congratulations Coffee Mug\n"+
-                        "300rs.");
+                intent.putExtra("resId",R.drawable.c11);
+                intent.putExtra("value","Frame N Cushion Combo\n"+
+                        "1200rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> One Printed Congratulations Theme \n Black Handle Ceramic Mug (350ml)");
+                        "-> One Personalised Frame\n" +
+                        "-> Frame Dimensions: 9.5 x 14 inches\n" +
+                        "-> One Personalised Cushion\n" +
+                        "-> Cushion size (12 x 12 inches)\n" +
+                        "-> Hardboard material with PVC sheet");
                 startActivity(intent);
             }
         });
@@ -207,45 +214,13 @@ public class MainActivity_combo_gift extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift12);
-                intent.putExtra("value","Dairy Milk Family Rakhi Pack\n"+
-                        "500rs.");
+                intent.putExtra("resId",R.drawable.c12);
+                intent.putExtra("value","KitKat Panda Combo\n"+
+                        "1300rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> Minion Rakhi\n"+
-                        "-> Lumba Rakhi\n"+
-                        "-> 2 Dairy Milk Fruit n Nut");
-                startActivity(intent);
-            }
-        });
-
-        i13 = findViewById(R.id.imageView13);
-        i13.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
-                Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift13);
-                intent.putExtra("value","Bro Rakhi with Chocolates\n"+
-                        "200rs.");
-                intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> Metal Bro Rakhi\n" +
-                        "-> 2 Dairy Milk Chocolate (13.2gm)");
-                startActivity(intent);
-            }
-        });
-
-        i14 = findViewById(R.id.imageView14);
-        i14.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity_combo_gift.this,MainActivity1.class);
-                Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift14);
-                intent.putExtra("value","Christmas Blessings\n"+
-                        "700rs.");
-                intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> One Decorated Christmas Tree\n" +
-                        "-> Merry Christmas Greeting Card");
+                        "-> One Panda Teddy (6 inches)\n" +
+                        "-> 10 Kitkat Chocolate (37 gm)\n" +
+                        "-> One MFT Black Cube Signature Box");
                 startActivity(intent);
             }
         });

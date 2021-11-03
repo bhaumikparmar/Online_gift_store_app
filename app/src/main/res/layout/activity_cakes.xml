@@ -157,7 +157,7 @@
                             android:id="@+id/textView4"
                             android:layout_width="152dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="26dp"
+                            android:layout_marginLeft="28dp"
                             android:background="#FFFFFF"
                             android:gravity="center"
                             android:padding="5dp"

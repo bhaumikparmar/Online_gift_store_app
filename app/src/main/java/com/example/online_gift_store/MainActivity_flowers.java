@@ -23,12 +23,12 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift1);
-                intent.putExtra("value","Almonds N Pistachios \n"+
-                        "500rs.");
+                intent.putExtra("resId",R.drawable.f1);
+                intent.putExtra("value","100 Red Roses Bouquet \n"+
+                        "2500rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> Almonds (100 gms) \n"+
-                        "-> Pistachios (100 gms)");
+                        "-> 100 Red Roses\n" +
+                        "-> Paper Packing");
                 startActivity(intent);
             }
         });
@@ -40,13 +40,11 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift2);
-                intent.putExtra("value","Sweets in Silver Thali\n"+
-                        "1900rs.");
+                intent.putExtra("resId",R.drawable.f2);
+                intent.putExtra("value","8 Mixed Roses Bouquet\n"+
+                        "300rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 500 Gms Kaju Roll\n" +
-                        "-> 500 Gms Besan Ladoo\n" +
-                        "-> 1 Silver Thali");
+                        "-> 8 Mixed Roses Bouquet");
                 startActivity(intent);
             }
         });
@@ -58,13 +56,12 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift3);
-                intent.putExtra("value","Pamper With Dry Fruits\n"+
+                intent.putExtra("resId",R.drawable.f3);
+                intent.putExtra("value","Vibrant Jubilance\n"+
                         "2500rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> A Round Glass Vase\n"+
-                        "-> Diameter 6 Inches approx.containing Almonds (250 gms),\n"+
-                        "-> Raisin (250 gms), Cashews Nuts (250 gms), Pista (250 gms)");
+                        "-> 6 Purple Orchids\n" +
+                        "-> Paper Packing");
                 startActivity(intent);
             }
         });
@@ -76,12 +73,12 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift4);
-                intent.putExtra("value","Soan Papdi N Cadbury Celebrations Pack\n"+
-                        "550rs.");
+                intent.putExtra("resId",R.drawable.f4);
+                intent.putExtra("value","Assorted Flowers Bouquet\n"+
+                        "600rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> Soan Papdi (250 gms)\n" +
-                        "-> 1 Cadbury Celebrations Pack (114 gms)");
+                        "-> One Bouquet of 12 Assorted Carnations (Yellow,White,Red and Pink) \n" +
+                        "-> Jute Packing and Pink Rafia");
                 startActivity(intent);
             }
         });
@@ -93,11 +90,14 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift5);
-                intent.putExtra("value","Haldirams Kaju Katli\n"+
-                        "600rs.");
+                intent.putExtra("resId",R.drawable.f5);
+                intent.putExtra("value","Bundle Of Love\n"+
+                        "300rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 500 Gms Kaju Katli");
+                        "-> 3 Yellow Roses\n" +
+                        "-> 2 White Roses\n" +
+                        "-> 2 Red Roses\n" +
+                        "-> 3 Orange Roses");
                 startActivity(intent);
             }
         });
@@ -109,11 +109,11 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift6);
-                intent.putExtra("value","Lavishing Holi Wishes\n"+
-                        "800rs.");
+                intent.putExtra("resId",R.drawable.f6);
+                intent.putExtra("value","A Dozen Yellow Roses\n"+
+                        "400rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 500 gm Haldiram Gujiya");
+                        "-> 12 Yellow Roses wrapped in cellophane");
                 startActivity(intent);
             }
         });
@@ -125,12 +125,12 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift7);
-                intent.putExtra("value","Rasgulla N Kitkat Chocolates\n"+
+                intent.putExtra("resId",R.drawable.f7);
+                intent.putExtra("value","Red Infatuation\n"+
                         "700rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 2 Nestle's Kitkat Chocolates (13.2 gms each)\n" +
-                        "-> Rasgulla (1 Kg)");
+                        "-> Arrangement of 13 Red Roses \n" +
+                        "-> Glass Vase with leaves");
                 startActivity(intent);
             }
         });
@@ -142,12 +142,12 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift8);
-                intent.putExtra("value","Gulab Jamun Diyas\n"+
-                        "900rs.");
+                intent.putExtra("resId",R.drawable.f8);
+                intent.putExtra("value","Spray Rainbow Roses\n"+
+                        "1900rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 1 kg Haldiram's Gulab Jamun\n" +
-                        "-> 5 Wax Filled Diyas(each of 2 inches diameter");
+                        "-> 15 spray coloured Roses ( Red, White, Yellow, Blue, Golden, Silver, Green and Brown)\n" +
+                        "-> Paper Packing");
                 startActivity(intent);
             }
         });
@@ -159,12 +159,13 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift9);
-                intent.putExtra("value","Potli Full of Healthy Dry Fruits\n"+
-                        "600rs.");
+                intent.putExtra("resId",R.drawable.f9);
+                intent.putExtra("value","Best of Flowers\n"+
+                        "1200rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                       "-> A Potli Bag with a pearl handle\n"+
-                       "-> Almonds (100 gms) and Cashew Nuts (100 gms)");
+                       "-> 4 Blue Orchids\n" +
+                       "-> 4 Yellow and Pink Asiatic Lilies\n" +
+                       "-> Yellow Paper");
                 startActivity(intent);
             }
         });
@@ -176,11 +177,12 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift10);
-                intent.putExtra("value","Kesariya Ladoos\n"+
-                                "1200rs.");
+                intent.putExtra("resId",R.drawable.f10);
+                intent.putExtra("value","Pink n Yellow Oriental Lilies\n"+
+                                "1400rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> 1 kg Kesariya Motichoor Ladoo");
+                        "-> 4 Oriental Lily (Pink and Yellow)\n" +
+                        "-> Paper Packing");
                 startActivity(intent);
             }
         });
@@ -191,11 +193,11 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift11);
-                intent.putExtra("value","Congratulations Coffee Mug\n"+
+                intent.putExtra("resId",R.drawable.f11);
+                intent.putExtra("value","Ardent Romance\n"+
                         "300rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> One Printed Congratulations Theme \n Black Handle Ceramic Mug (350ml)");
+                        "-> Single Stick of Red Rose in MyFlowerTree Luxury Black Box");
                 startActivity(intent);
             }
         });
@@ -207,13 +209,11 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift12);
-                intent.putExtra("value","Dairy Milk Family Rakhi Pack\n"+
+                intent.putExtra("resId",R.drawable.f12);
+                intent.putExtra("value","Purple Admiration\n"+
                         "500rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> Minion Rakhi\n"+
-                        "-> Lumba Rakhi\n"+
-                        "-> 2 Dairy Milk Fruit n Nut");
+                        "-> 6 Purple Orchids wrapped in Cellophane packing");
                 startActivity(intent);
             }
         });
@@ -224,12 +224,13 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift13);
-                intent.putExtra("value","Bro Rakhi with Chocolates\n"+
+                intent.putExtra("resId",R.drawable.f13);
+                intent.putExtra("value","Royal Roses\n"+
                         "200rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> Metal Bro Rakhi\n" +
-                        "-> 2 Dairy Milk Chocolate (13.2gm)");
+                        "-> 10 Blue sprayed Roses\n" +
+                        "-> White Paper Packing\n" +
+                        "-> Blue Bow");
                 startActivity(intent);
             }
         });
@@ -240,12 +241,11 @@ public class MainActivity_flowers extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
-                intent.putExtra("resId",R.drawable.o_gift14);
-                intent.putExtra("value","Christmas Blessings\n"+
-                        "700rs.");
+                intent.putExtra("resId",R.drawable.f14);
+                intent.putExtra("value","Pink Happiness\n"+
+                        "2100rs.");
                 intent.putExtra("value1", "Product Details:-\n\n"+
-                        "-> One Decorated Christmas Tree\n" +
-                        "-> Merry Christmas Greeting Card");
+                        "-> Single Pink Rose Paper Packing Arrangement\n");
                 startActivity(intent);
             }
         });
