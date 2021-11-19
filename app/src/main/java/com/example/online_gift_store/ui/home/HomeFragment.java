@@ -25,18 +25,16 @@ import com.example.online_gift_store.R;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+        HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         TextView textView = root.findViewById(R.id.text_home);
 
         ImageView imageView = root.findViewById(R.id.i1);
-         imageView.setOnClickListener(new View.OnClickListener() {
+
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getActivity(), MainActivity_birthday_gift.class);
@@ -46,7 +44,7 @@ public class HomeFragment extends Fragment {
 
 
         ImageView imageView1 = root.findViewById(R.id.i2);
-         imageView1.setOnClickListener(new View.OnClickListener() {
+        imageView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getActivity(), MainActivity_anniversary_gift.class);
@@ -54,8 +52,10 @@ public class HomeFragment extends Fragment {
             }
          });
 
-         ImageView imageView2 = root.findViewById(R.id.i3);
-          imageView2.setOnClickListener(new View.OnClickListener() {
+        ImageView imageView2 = root.findViewById(R.id.i3);
+
+
+        imageView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getActivity(), MainActivity_occasions_gift.class);
@@ -63,8 +63,9 @@ public class HomeFragment extends Fragment {
             }
           });
 
-         ImageView imageView3 = root.findViewById(R.id.i4);
-          imageView3.setOnClickListener(new View.OnClickListener() {
+        ImageView imageView3 = root.findViewById(R.id.i4);
+
+        imageView3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getActivity(), MainActivity_cakes.class);
@@ -72,8 +73,10 @@ public class HomeFragment extends Fragment {
             }
           });
 
-         ImageView imageView4 = root.findViewById(R.id.i5);
-          imageView4.setOnClickListener(new View.OnClickListener() {
+        ImageView imageView4 = root.findViewById(R.id.i5);
+
+
+        imageView4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getActivity(), MainActivity_flowers.class);
@@ -81,8 +84,9 @@ public class HomeFragment extends Fragment {
             }
           });
 
-         ImageView imageView5 = root.findViewById(R.id.i6);
-          imageView5.setOnClickListener(new View.OnClickListener() {
+        ImageView imageView5 = root.findViewById(R.id.i6);
+
+        imageView5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(getActivity(), MainActivity_combo_gift.class);

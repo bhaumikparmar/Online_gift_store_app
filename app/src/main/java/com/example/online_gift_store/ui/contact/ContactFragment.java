@@ -12,11 +12,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.online_gift_store.R;
-
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -24,12 +29,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ContactFragment extends Fragment {
-    private ContactViewModel contactViewModel;
 
     public View onCreateView(LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        contactViewModel =
-                new ViewModelProvider(this).get(ContactViewModel.class);
+        ContactViewModel contactViewModel = new ViewModelProvider(this).get(ContactViewModel.class);
         View root = inflater.inflate(R.layout.fragment_contact, container, false);
         final TextView textView = root.findViewById(R.id.contact);
         EditText editText1=root.findViewById(R.id.name);
@@ -82,7 +85,7 @@ public class ContactFragment extends Fragment {
                     editText5.setError("Enter Only Alphabetical Character");
                 }
                 else {
-                /*    Map<String, String> values = new HashMap<>();
+                    Map<String, String> values = new HashMap<>();
                     values.put("name", editText1.getText().toString());
                     values.put("email", editText2.getText().toString());
                     values.put("cno", editText3.getText().toString());
@@ -95,7 +98,14 @@ public class ContactFragment extends Fragment {
                         }
 
                     });
-               */ }
+                }
+            }
+        });
+
+        contactViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                textView.setText(s);
             }
         });
 

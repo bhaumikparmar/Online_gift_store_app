@@ -1,7 +1,5 @@
 package com.example.online_gift_store;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -11,13 +9,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QuerySnapshot;
+
 
 public class MainActivity_login extends AppCompatActivity {
     EditText login,passwd;
     Button log;
     TextView forgot_pass,reg;
-    String id;
-    int success=1;
+
+    int success=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +56,22 @@ public class MainActivity_login extends AppCompatActivity {
                     passwd.setError("Password must be 8 charactor.");
                 }
                 else {
+                    FirebaseFirestore.getInstance().collection("Registration").addSnapshotListener(new EventListener<QuerySnapshot>() {
+                        @Override
+                        public void onEvent(@Nullable @org.jetbrains.annotations.Nullable QuerySnapshot value, @Nullable @org.jetbrains.annotations.Nullable FirebaseFirestoreException error) {
+                            for (DocumentSnapshot s:value)
+                            {
+                                String nm = s.getString("mail");
+                                String pass = s.getString("pass");
+                                if (nm.equals(login.getText().toString().trim()) && pass.equals(passwd.getText().toString().trim()))
+                                {
+                                    success = 1;
+
+                                }
+                            }
+                        }
+                    });
+
 
                     if (success == 1) {
                         Intent intent = new Intent(MainActivity_login.this, MainActivity.class);
@@ -67,7 +90,7 @@ public class MainActivity_login extends AppCompatActivity {
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(MainActivity_login.this,MainActivity_registration.class);
+                Intent intent= new Intent(MainActivity_login.this, MainActivity.class);
                 startActivity(intent);
             }
         });

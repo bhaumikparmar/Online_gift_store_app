@@ -10,12 +10,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity_flowers extends AppCompatActivity {
 
-    ImageView i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14;
+    ImageView fback,i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_occasions_gift);
+        setContentView(R.layout.activity_flowers);
+
+        fback = findViewById(R.id.fback);
+        fback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent= new Intent(MainActivity_flowers.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         i1 = findViewById(R.id.imageView1);
         i1.setOnClickListener(new View.OnClickListener() {
@@ -24,8 +34,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f1);
-                intent.putExtra("value","100 Red Roses Bouquet \n"+
-                        "2500rs.");
+                intent.putExtra("value","100 Red Roses Bouquet \n");
+                intent.putExtra("value2",        "2500");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 100 Red Roses\n" +
                         "-> Paper Packing");
@@ -41,8 +51,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f2);
-                intent.putExtra("value","8 Mixed Roses Bouquet\n"+
-                        "300rs.");
+                intent.putExtra("value","8 Mixed Roses Bouquet\n");
+                intent.putExtra("value2",        "300");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 8 Mixed Roses Bouquet");
                 startActivity(intent);
@@ -57,8 +67,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f3);
-                intent.putExtra("value","Vibrant Jubilance\n"+
-                        "2500rs.");
+                intent.putExtra("value","Vibrant Jubilance\n");
+                intent.putExtra("value2",        "2500");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 6 Purple Orchids\n" +
                         "-> Paper Packing");
@@ -74,8 +84,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f4);
-                intent.putExtra("value","Assorted Flowers Bouquet\n"+
-                        "600rs.");
+                intent.putExtra("value","Assorted Flowers Bouquet\n");
+                intent.putExtra("value2",       "600");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> One Bouquet of 12 Assorted Carnations (Yellow,White,Red and Pink) \n" +
                         "-> Jute Packing and Pink Rafia");
@@ -91,8 +101,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f5);
-                intent.putExtra("value","Bundle Of Love\n"+
-                        "300rs.");
+                intent.putExtra("value","Bundle Of Love\n");
+                intent.putExtra("value2",        "300");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 3 Yellow Roses\n" +
                         "-> 2 White Roses\n" +
@@ -110,8 +120,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f6);
-                intent.putExtra("value","A Dozen Yellow Roses\n"+
-                        "400rs.");
+                intent.putExtra("value","A Dozen Yellow Roses\n");
+                intent.putExtra("value2",        "400");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 12 Yellow Roses wrapped in cellophane");
                 startActivity(intent);
@@ -126,8 +136,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f7);
-                intent.putExtra("value","Red Infatuation\n"+
-                        "700rs.");
+                intent.putExtra("value","Red Infatuation\n");
+                intent.putExtra("value2",       "700");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> Arrangement of 13 Red Roses \n" +
                         "-> Glass Vase with leaves");
@@ -143,8 +153,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f8);
-                intent.putExtra("value","Spray Rainbow Roses\n"+
-                        "1900rs.");
+                intent.putExtra("value","Spray Rainbow Roses\n");
+                intent.putExtra("value2",       "1900");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 15 spray coloured Roses ( Red, White, Yellow, Blue, Golden, Silver, Green and Brown)\n" +
                         "-> Paper Packing");
@@ -160,8 +170,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f9);
-                intent.putExtra("value","Best of Flowers\n"+
-                        "1200rs.");
+                intent.putExtra("value","Best of Flowers\n");
+                intent.putExtra("value2",        "1200");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                        "-> 4 Blue Orchids\n" +
                        "-> 4 Yellow and Pink Asiatic Lilies\n" +
@@ -178,8 +188,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f10);
-                intent.putExtra("value","Pink n Yellow Oriental Lilies\n"+
-                                "1400rs.");
+                intent.putExtra("value","Pink n Yellow Oriental Lilies\n");
+                intent.putExtra("value2",                "1400");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 4 Oriental Lily (Pink and Yellow)\n" +
                         "-> Paper Packing");
@@ -194,8 +204,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f11);
-                intent.putExtra("value","Ardent Romance\n"+
-                        "300rs.");
+                intent.putExtra("value","Ardent Romance\n");
+                intent.putExtra("value2",        "300");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> Single Stick of Red Rose in MyFlowerTree Luxury Black Box");
                 startActivity(intent);
@@ -210,8 +220,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f12);
-                intent.putExtra("value","Purple Admiration\n"+
-                        "500rs.");
+                intent.putExtra("value","Purple Admiration\n");
+                intent.putExtra("value2",        "500");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 6 Purple Orchids wrapped in Cellophane packing");
                 startActivity(intent);
@@ -225,8 +235,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f13);
-                intent.putExtra("value","Royal Roses\n"+
-                        "200rs.");
+                intent.putExtra("value","Royal Roses\n");
+                intent.putExtra("value2",        "200");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> 10 Blue sprayed Roses\n" +
                         "-> White Paper Packing\n" +
@@ -242,8 +252,8 @@ public class MainActivity_flowers extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity_flowers.this,MainActivity1.class);
                 Button button = findViewById(R.id.order);
                 intent.putExtra("resId",R.drawable.f14);
-                intent.putExtra("value","Pink Happiness\n"+
-                        "2100rs.");
+                intent.putExtra("value","Pink Happiness\n");
+                intent.putExtra("value2",        "2100");
                 intent.putExtra("value1", "Product Details:-\n\n"+
                         "-> Single Pink Rose Paper Packing Arrangement\n");
                 startActivity(intent);

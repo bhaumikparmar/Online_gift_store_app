@@ -20,5 +20,80 @@
     <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
     <string name="yes">yes</string>
     <string name="no">no</string>
+    <string name="are_you_sure_cancel_your_order">Are You Sure Cancel Your Order?</string>
+    <string name="admin_gift_store_owner">Admin(Gift Store Owner)</string>
+    <string name="password">Password</string>
+    <string name="email_id">Email Id</string>
+    <string name="login">Login</string>
+    <string name="contact_us_messages">Contact Us Messages</string>
+    <string name="order_s_details">Order\'s Details</string>
+
+    <string-array name="qty">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="dd">
+        <item>DD</item>
+        <item>01/</item>
+        <item>02/</item>
+        <item>03/</item>
+        <item>04/</item>
+        <item>05/</item>
+        <item>06/</item>
+        <item>07/</item>
+        <item>08/</item>
+        <item>09/</item>
+        <item>10/</item>
+        <item>11/</item>
+        <item>12/</item>
+        <item>13/</item>
+        <item>14/</item>
+        <item>15/</item>
+        <item>16/</item>
+        <item>17/</item>
+        <item>18/</item>
+        <item>19/</item>
+        <item>20/</item>
+        <item>21/</item>
+        <item>22/</item>
+        <item>23/</item>
+        <item>24/</item>
+        <item>25/</item>
+        <item>26/</item>
+        <item>27/</item>
+        <item>28/</item>
+        <item>29/</item>
+        <item>30/</item>
+        <item>31/</item>
+    </string-array>
+
+    <string-array name="mm">
+        <item>MM</item>
+        <item>01/</item>
+        <item>02/</item>
+        <item>03/</item>
+        <item>04/</item>
+        <item>05/</item>
+        <item>06/</item>
+        <item>07/</item>
+        <item>08/</item>
+        <item>09/</item>
+        <item>10/</item>
+        <item>11/</item>
+        <item>12/</item>
+    </string-array>
+
+    <string-array name="yyyy">
+        <item>YYYY</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
 
 </resources>

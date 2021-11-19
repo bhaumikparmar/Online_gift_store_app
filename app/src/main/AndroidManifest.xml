@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.online_gift_store">
 
     <application
@@ -10,7 +11,8 @@
         android:roundIcon="@drawable/logo"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:name="androidx.multidex.MultiDexApplication">
 
         <activity android:name="com.example.online_gift_store.MainActivity_splash">
             <intent-filter>
@@ -20,10 +22,10 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".MainActivity_users"/>
         <activity android:name="com.example.online_gift_store.MainActivity_login"/>
         <activity android:name=".MainActivity_registration"/>
         <activity android:name=".MainActivity_forgot_pass1"/>
-        <activity android:name=".MainActivity_forgot_pass2"/>
         <activity android:name=".MainActivity_forgot_pass3"/>
         <activity android:name=".MainActivity_birthday_gift"/>
         <activity android:name=".MainActivity_anniversary_gift"/>
@@ -32,6 +34,20 @@
         <activity android:name=".MainActivity_flowers"/>
         <activity android:name=".MainActivity_combo_gift"/>
         <activity android:name=".MainActivity1"/>
+        <activity android:name=".MainActivity_order_info"/>
+        <activity android:name=".MainActivity_delivery_info"/>
+        <activity android:name=".MainActivity_payment"/>
+        <activity android:name=".MainActivity_receipt"/>
+        <activity android:name=".MainActivity_cancel_order"/>
+
+        <activity android:name=".MainActivity_login_admin"/>
+        <activity android:name=".MainActivity_forgot_pass_admin"/>
+        <activity android:name=".MainActivity_view_admin"/>
+        <activity android:name=".MainActivity_admin_view_users"/>
+        <activity android:name=".MainActivity_admin_view_orders"/>
+        <activity android:name=".MainActivity_admin_view_payments"/>
+        <activity android:name=".MainActivity_admin_view_contactus_msg"/>
+        <activity android:name=".MainActivity_admin_view_rating"/>
 
         <activity
             android:name=".MainActivity"
@@ -39,7 +55,14 @@
             android:theme="@style/Theme.Online_gift_store.NoActionBar">
         </activity>
 
-
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"
+        tools:ignore="ManifestOrder" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
 
 </manifest>

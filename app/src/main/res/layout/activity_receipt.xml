@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E91E63">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C61652"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#E91E63">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="#C61652"
+                android:gravity="center"
+                android:text="Receipt"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="615dp"
+            android:orientation="vertical">
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="440dp">
+
+                <TextView
+                    android:id="@+id/texto_no"
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Order No. :"
+                    android:textColor="@color/white"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:id="@+id/odrNo"
+                    android:layout_width="245dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="123"/>
+
+                <TextView
+                    android:id="@+id/texto_date"
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Order Date :"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_column="0"
+                    app:layout_row="1" />
+
+                <TextView
+                    android:id="@+id/odrdt"
+                    android:layout_width="245dp"
+                    android:layout_height="55dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="10/12/21"/>
+
+                <TextView
+                    android:id="@+id/textproduct_nm"
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Product \n Name :"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_column="0"
+                    app:layout_gravity="center"
+                    app:layout_row="2" />
+
+                <TextView
+                    android:id="@+id/pdctNm"
+                    android:layout_width="245dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="flower"/>
+
+                <TextView
+                    android:id="@+id/text_qty"
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Quantity :"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_column="0"
+                    app:layout_row="3" />
+
+                <TextView
+                    android:id="@+id/pdctqty"
+                    android:layout_width="245dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="2"/>
+
+                <TextView
+                    android:id="@+id/textprice"
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Price :"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_column="0"
+                    app:layout_row="4" />
+
+                <TextView
+                    android:id="@+id/pdctprice"
+                    android:layout_width="245dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="200"/>
+
+                <TextView
+                    android:id="@+id/texttotal"
+                    android:layout_width="135dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Total Price :"
+                    android:textColor="@color/white"
+                    android:textSize="24dp"
+                    app:layout_column="0"
+                    app:layout_row="5" />
+
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="245dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:text="400"/>
+
+            </androidx.gridlayout.widget.GridLayout>
+
+
+
+            <Button
+                android:id="@+id/download1"
+                android:layout_width="182dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#E91E63"
+                android:gravity="center"
+                android:text="Download"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/cancel1"
+                android:layout_width="182dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_button"
+                android:backgroundTint="#E91E63"
+                android:gravity="center"
+                android:text="Cancel Order"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

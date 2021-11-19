@@ -14,7 +14,7 @@
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="325dp"
+            android:layout_height="407dp"
             android:layout_gravity="bottom">
 
             <ImageView

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "81583968771",
+    "project_id": "online-gift-store",
+    "storage_bucket": "online-gift-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81583968771:android:d9de663811aace079eb436",
+        "android_client_info": {
+          "package_name": "com.example.online_gift_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81583968771-dmqhf54t06jema34epaqdjnh4jsi1ep8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.online_gift_store",
+            "certificate_hash": "679be51bf6fd4f5adb228951a4956f806d7812c2"
+          }
+        },
+        {
+          "client_id": "81583968771-f2osf7gj061r8jgfqctbnv6h5cchc3ks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4AOAl4qejXqE1tHszC66T3iZp_PEWle8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81583968771-f2osf7gj061r8jgfqctbnv6h5cchc3ks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

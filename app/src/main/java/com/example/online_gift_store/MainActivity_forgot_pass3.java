@@ -5,15 +5,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.firestore.FirebaseFirestore;
 
 
 public class MainActivity_forgot_pass3 extends AppCompatActivity {
     Button chpass;
     EditText pass,cpass;
     String id;
+    ImageView cpback;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +27,16 @@ public class MainActivity_forgot_pass3 extends AppCompatActivity {
         pass = findViewById(R.id.pass);
         cpass=findViewById(R.id.cpass);
         id = getIntent().getStringExtra("id");
+
+        cpback = findViewById(R.id.cpback);
+        cpback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent= new Intent(MainActivity_forgot_pass3.this,MainActivity_forgot_pass1.class);
+                startActivity(intent);
+            }
+        });
 
         chpass.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,7 +52,7 @@ public class MainActivity_forgot_pass3 extends AppCompatActivity {
                     cpass.setError("Password not matched.");
                 }
                 else {
-                /*    FirebaseFirestore.getInstance().collection("Registration").document(id).update("pass", pass.getText().toString());*/
+                    FirebaseFirestore.getInstance().collection("Registration").document(id).update("pass", pass.getText().toString());
                     Intent intent = new Intent(MainActivity_forgot_pass3.this, MainActivity_login.class);
                     Toast.makeText(getApplicationContext(), "Password Changed Successfully", Toast.LENGTH_SHORT).show();
                     startActivity(intent);

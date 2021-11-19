@@ -17,17 +17,13 @@ import com.example.online_gift_store.R;
 
 public class AboutFragment extends Fragment {
 
-    private AboutViewModel aboutViewModel;
-
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        aboutViewModel =
-                new ViewModelProvider(this).get(AboutViewModel.class);
+        AboutViewModel aboutViewModel = new ViewModelProvider(this).get(AboutViewModel.class);
         View root = inflater.inflate(R.layout.fragment_about, container, false);
         final TextView textView = root.findViewById(R.id.text1);
         final TextView textView1 = root.findViewById(R.id.text2);
         ImageView imageView = root.findViewById(R.id.i1);
-        ImageView imageView1 = root.findViewById(R.id.i2);
 
         aboutViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override

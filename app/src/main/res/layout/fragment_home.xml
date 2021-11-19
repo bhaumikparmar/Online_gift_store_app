@@ -37,10 +37,18 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <SearchView
+            android:id="@+id/search_bar"
             android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:scrollbars="vertical"
+            android:queryHint="Search"
+            android:iconifiedByDefault="false">
 
+            <ListView
+                android:id="@+id/list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </SearchView>
 
         <ScrollView
@@ -57,16 +65,17 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center">
 
+
                     <ImageView
                         android:id="@+id/i1"
                         android:layout_width="165dp"
                         android:layout_height="175dp"
                         android:layout_marginTop="15dp"
+                        android:src="@drawable/birthday_gifts_i"
                         android:background="#100F0F"
                         android:padding="10dp"
-                        android:src="@drawable/birthday_gifts_i"
-                        app:layout_column="0"
                         app:layout_gravity="center"
+                        app:layout_column="0"
                         app:layout_row="0" />
 
                     <TextView
